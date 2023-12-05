@@ -50,7 +50,8 @@ This should give
 ```
 * Acc@1 - Acc@5 - loss -
 ```
-
+## Known issues
+If loss is NaN, please check https://github.com/facebookresearch/deit/issues/29.
 
 ## Citation
 ```
