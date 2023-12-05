@@ -57,6 +57,8 @@ This should give
 
 2. One limitation of our TransHP is its need to select prompting blocks and tune the balance parameters. Any advice or follow-up work to solve this problem is welcomed.
 
+3. Another limitation is most of our experiments are performed on a lightweight Vision Transformer (ViT) due to insufficient computing resources. I am happy to see more experiments on larger ViTs or bigger datasets.
+
 ## Citation
 ```
 @inproceedings{
@@ -69,6 +71,6 @@ This should give
 }
 ```
 ## Acknowledgement
-We implement our TransHP based on [DeiT](https://github.com/facebookresearch/deit/blob/main/README_deit.md). Our baseline is a lightweight Vision Transformer (ViT), i.e. ViT-small.
+We implement our TransHP based on [DeiT](https://github.com/facebookresearch/deit/blob/main/README_deit.md). Our baseline is a lightweight ViT, i.e. ViT-small.
 
 
