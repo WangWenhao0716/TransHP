@@ -39,7 +39,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py \
 ## Test
 ***We are working on the reproducing and will release the reproduced model as soon as possible.***
 
-We release our [trained model](), you should download and save it. Then you can test it performance by
+We release our [trained model]() and corresponding [logs](), you should download and save it. Then you can test it performance by
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --eval \
 --resume released_checkpoint.pth --model deit_small_hi_patch16_224 \
