@@ -53,7 +53,9 @@ This should give
 * Acc@1 - Acc@5 - loss -
 ```
 ## Known issues
-If loss is NaN, please check https://github.com/facebookresearch/deit/issues/29.
+1. If the loss is NaN, please check https://github.com/facebookresearch/deit/issues/29.
+
+2. One limitation of our TransHP is its need to select prompting blocks and tune the balance parameters. Any advice or follow-up work to solve this problem is welcomed.
 
 ## Citation
 ```
