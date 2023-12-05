@@ -1,6 +1,8 @@
 # TransHP
 [NeurIPS 2023] The official implementation of [TransHP: Image Classification with Hierarchical Prompting](https://arxiv.org/pdf/2304.06385.pdf).
 
+![image](https://github.com/WangWenhao0716/TransHP/blob/main/demo.png)
+
 ## Environment
 Our TransHP uses PyTorch 1.8.0 and timm 0.4.12. They can be easily installed by:
 ```
