@@ -37,6 +37,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py \
 ```
 
 ## Test
+***We are working on the reproducing and will release the reproduced model as soon as possible.***
 
 We release our [trained model](), you should download and save it. Then you can test it performance by
 ```
