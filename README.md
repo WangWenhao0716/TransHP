@@ -40,11 +40,15 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py \
 
 We release our [trained model](), you should download and save it. Then you can test it performance by
 ```
-python main.py --eval --resume _checkpoint.pth --model deit_small_hi_patch16_224 --data-path /gs/home/wangwh/gsdata/ILSVRC2012_RAW_PYTORCH/
+python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --eval \
+--resume released_checkpoint.pth --model deit_small_hi_patch16_224 \
+--data-path /path/to/imagenet/
 ```
 
 This should give
-
+```
+* Acc@1 - Acc@5 - loss -
+```
 
 
 ## Citation
