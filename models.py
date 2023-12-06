@@ -115,7 +115,7 @@ class HiVisionTransformer(VisionTransformer):
         emb_dim = x.shape[-1]
         proto_cls_probs = []
         for b in range(len(self.blocks)-1):
-            if b >= 10: #change 2
+            if b >= 0: #change 2
                 x_with_prototype = torch.cat((x, prototypes[b].weight.expand(B,-1,-1)), dim=1)
                 x_with_prototype = self.blocks[b](x_with_prototype)
                 x = x_with_prototype[:, :ori, :]
