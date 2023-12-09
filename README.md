@@ -39,9 +39,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py \
 ```
 
 ## Test
-***We are working on the reproducing and will release the reproduced model as soon as possible.***
 
-We release our [trained model]() and corresponding [logs](), you should download and save it. Then you can test it performance by
+We release our [trained model](https://drive.google.com/file/d/1FkPhq8Y2Lcgv-JZ2SM8wcV2voXxfr9UJ/view?usp=sharing) and corresponding [logs](https://drive.google.com/file/d/1YaMP4RDNZonqREthpQ4OnHAXccR0rKb1/view?usp=sharing), you should download and save it. Then you can test its performance by
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --eval \
 --resume released_checkpoint.pth --model deit_small_hi_patch16_224 \
@@ -50,8 +49,11 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --eval \
 
 This should give
 ```
-* Acc@1 - Acc@5 - loss -
+* Acc@1 78.514 Acc@5 93.614 loss 0.948
 ```
+
+*Note that this is a bit different from our reported performance (78.65) in our paper due to the randomness in the reproducing.*
+
 ## Known issues
 1. If the loss is NaN, please check https://github.com/facebookresearch/deit/issues/29.
 
